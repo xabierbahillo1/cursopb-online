@@ -1,3 +1,9 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /node_modules/
+Disallow: /build/static/
+Disallow: /build/asset-manifest.json
+Disallow: /build/manifest.json
+Disallow: /build/service-worker.js
+Disallow: /service-worker.js
+Allow: /

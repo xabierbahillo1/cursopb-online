@@ -1,0 +1,79 @@
+{
+  "id": 3,
+  "title": "Control de Flujo I: Condicionales",
+  "icon": "code",
+  "lessons": [
+    {
+      "id": "3-1",
+      "title": "Lógica y Booleanos",
+      "type": "content",
+      "content": {
+        "component": "Lesson3_1"
+      }
+    },
+    {
+      "id": "3-2",
+      "title": "Condicionales simples",
+      "type": "content",
+      "content": {
+        "component": "Lesson3_2"
+      }
+    },
+    {
+      "id": "3-3",
+      "title": "Ejercicio: Detector de Edad",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "3-4",
+      "title": "Explicación: Ejercicio Detector de Edad",
+      "type": "content",
+      "content": {
+        "component": "Lesson3_4"
+      }
+    },
+    {
+      "id": "3-5",
+      "title": "Condicionales encadenadas",
+      "type": "content",
+      "content": {
+        "component": "Lesson3_5"
+      }
+    },
+    {
+      "id": "3-6",
+      "title": "Ejercicio: Clasificador de Calificaciones",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "3-7",
+      "title": "Explicación: Ejercicio Clasificador de Calificaciones",
+      "type": "content",
+      "content": {
+        "component": "Lesson3_7"
+      }
+    },
+    {
+      "id": "3-8",
+      "title": "Ejercicio: Clasificador de Tipos de Triángulos",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "3-9",
+      "title": "Explicación: Ejercicio Clasificador de Tipos de Triángulos",
+      "type": "content",
+      "content": {
+        "component": "Lesson3_9"
+      }
+    },
+    {
+      "id": "3-10",
+      "title": "Test: Condicionales",
+      "type": "quiz",
+      "content": {}
+    }
+  ]
+}

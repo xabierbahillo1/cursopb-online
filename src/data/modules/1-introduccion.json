@@ -1,0 +1,23 @@
+{
+  "id": 1,
+  "title": "Introducción al Curso",
+  "icon": "book",
+  "lessons": [
+     {
+      "id": "1-1",
+      "title": "¿Qué Vas a Aprender y Para Quién Es?",
+      "type": "content",
+      "content": {
+        "component": "Lesson1_1"
+      }
+    },
+    {
+      "id": "1-2",
+      "title": "Cómo Funciona el Curso",
+      "type": "content",
+      "content": {
+        "component": "Lesson1_2"
+      }
+    }
+  ]
+}

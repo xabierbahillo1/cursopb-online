@@ -1,0 +1,139 @@
+{
+  "id": 6,
+  "title": "Estructuras de Datos",
+  "icon": "book",
+  "lessons": [
+     {
+      "id": "6-1",
+      "title": "Del Array al Objeto",
+      "type": "content",
+      "content": {
+        "component": "Lesson6_1"
+      }
+    },
+    {
+      "id": "6-2",
+      "title": "Objetos",
+      "type": "content",
+      "content": {
+        "component": "Lesson6_2"
+      }
+    },
+    {
+      "id": "6-3",
+      "title": "Funciones y Objetos",
+      "type": "content",
+      "content": {
+        "component": "Lesson6_3"
+      }
+    },
+    {
+      "id": "6-4",
+      "title": "Ejercicio: Ficha de Producto",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "6-5",
+      "title": "Explicación: Ejercicio Ficha de Producto",
+      "type": "content",
+      "content": {
+        "component": "Lesson6_5"
+      }
+    },
+    {
+      "id": "6-6",
+      "title": "Arrays de Objetos",
+      "type": "content",
+      "content": {
+        "component": "Lesson6_6"
+      }
+    },
+    {
+      "id": "6-7",
+      "title": "Ejercicio: Análisis de Biblioteca de Videojuegos",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "6-8",
+      "title": "Explicación: Ejercicio Análisis de Biblioteca de Videojuegos",
+      "type": "content",
+      "content": {
+        "component": "Lesson6_8"
+      }
+    },
+    {
+      "id": "6-9",
+      "title": "Objetos Anidados",
+      "type": "content",
+      "content": {
+        "component": "Lesson6_9"
+      }
+    },
+    {
+      "id": "6-10",
+      "title": "Ejercicio: Sistema de Reservas de Hotel",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "6-11",
+      "title": "Explicación: Ejercicio Sistema de Reservas de Hotel",
+      "type": "content",
+      "content": {
+        "component": "Lesson6_11"
+      }
+    },
+    {
+      "id": "6-12",
+      "title": "Referencias y Copias",
+      "type": "content",
+      "content": {
+        "component": "Lesson6_12"
+      }
+    },
+    {
+      "id": "6-13",
+      "title": "Ejercicio: Sistema de Perfiles de Usuario",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "6-14",
+      "title": "Explicación: Ejercicio Sistema de Perfiles de Usuario",
+      "type": "content",
+      "content": {
+        "component": "Lesson6_14"
+      }
+    },
+    {
+      "id": "6-15",
+      "title": "Ejercicio: Sistema de Gestión de Torneo de eSports",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "6-16",
+      "title": "Explicación: Ejercicio Sistema de Gestión de Torneo de eSports",
+      "type": "content",
+      "content": {
+        "component": "Lesson6_16"
+      }
+    },
+    {
+      "id": "6-17",
+      "title": "Test: Estructuras de Datos",
+      "type": "quiz",
+      "content": {}
+    },
+    {
+      "id": "6-18",
+      "title": "Conclusiones y Próximos Pasos",
+      "type": "content",
+      "content": {
+        "component": "Lesson6_18"
+      }
+    }
+  ]
+}

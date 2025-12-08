@@ -1,0 +1,57 @@
+{
+  "id": 8,
+  "title": "Cierre del Curso",
+  "icon": "graduation-cap",
+  "lessons": [
+    {
+      "id": "8-1",
+      "title": "Introducción al Proyecto Final",
+      "type": "content",
+      "content": {
+        "component": "Lesson8_1"
+      }
+    },
+    {
+      "id": "8-2",
+      "title": "Proyecto Final: Sistema de Gestión de Tienda",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "8-3",
+      "title": "Explicación: Proyecto Final",
+      "type": "content",
+      "content": {
+        "component": "Lesson8_3"
+      }
+    },
+    {
+      "id": "8-4",
+      "title": "Test Final",
+      "type": "quiz",
+      "content": {}
+    },
+    {
+      "id": "8-5",
+      "title": "Lo Que Has Aprendido",
+      "type": "content",
+      "content": {
+        "component": "Lesson8_5"
+      }
+    },
+    {
+      "id": "8-6",
+      "title": "¿Por Dónde Continuar?",
+      "type": "content",
+      "content": {
+        "component": "Lesson8_6"
+      }
+    },
+    {
+      "id": "8-7",
+      "title": "Encuesta de Satisfacción",
+      "type": "survey",
+      "content": {}
+    }
+  ]
+}

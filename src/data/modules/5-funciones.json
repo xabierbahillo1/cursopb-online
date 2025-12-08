@@ -1,0 +1,125 @@
+{
+  "id": 5,
+  "title": "Funciones y Modularidad",
+  "icon": "code",
+  "lessons": [
+    {
+      "id": "5-1",
+      "title": "Repaso de Funciones",
+      "type": "content",
+      "content": {
+        "component": "Lesson5_1"
+      }
+    },
+    {
+      "id": "5-2",
+      "title": "Parámetros y Argumentos",
+      "type": "content",
+      "content": {
+        "component": "Lesson5_2"
+      }
+    },
+    {
+      "id": "5-3",
+      "title": "Valores de Retorno",
+      "type": "content",
+      "content": {
+        "component": "Lesson5_3"
+      }
+    },
+    {
+      "id": "5-4",
+      "title": "Trabajando con Múltiples Funciones",
+      "type": "content",
+      "content": {
+        "component": "Lesson5_4"
+      }
+    },
+    {
+      "id": "5-5",
+      "title": "Ejercicio: Validador de Contraseñas",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "5-6",
+      "title": "Explicación: Ejercicio Validador de Contraseñas",
+      "type": "content",
+      "content": {
+        "component": "Lesson5_6"
+      }
+    },
+    {
+      "id": "5-7",
+      "title": "Ejercicio: Generador de Informes de Ventas",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "5-8",
+      "title": "Explicación: Ejercicio Generador de Informes de Ventas",
+      "type": "content",
+      "content": {
+        "component": "Lesson5_8"
+      }
+    },
+    {
+      "id": "5-9",
+      "title": "Alcance de Variables",
+      "type": "content",
+      "content": {
+        "component": "Lesson5_9"
+      }
+    },
+    {
+      "id": "5-10",
+      "title": "Ejercicio: Sistema de Precios con IVA",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "5-11",
+      "title": "Explicación: Ejercicio Sistema de Precios con IVA",
+      "type": "content",
+      "content": {
+        "component": "Lesson5_11"
+      }
+    },
+    {
+      "id": "5-12",
+      "title": "Funciones en archivos separados",
+      "type": "content",
+      "content": {
+        "component": "Lesson5_12"
+      }
+    },
+    {
+      "id": "5-13",
+      "title": "Ejercicio: Análisis de calificaciones",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "5-14",
+      "title": "Explicación: Ejercicio Análisis de calificaciones",
+      "type": "content",
+      "content": {
+        "component": "Lesson5_14"
+      }
+    },
+    {
+      "id": "5-15",
+      "title": "Test: Funciones",
+      "type": "quiz",
+      "content": {}
+    },
+    {
+      "id": "5-16",
+      "title": "Conclusiones y Próximos Pasos",
+      "type": "content",
+      "content": {
+        "component": "Lesson5_16"
+      }
+    }
+  ]
+}

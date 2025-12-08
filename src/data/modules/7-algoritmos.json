@@ -1,0 +1,139 @@
+{
+  "id": 7,
+  "title": "Algoritmos",
+  "icon": "code",
+  "lessons": [
+    {
+      "id": "7-1",
+      "title": "Introducción a los Algoritmos Fundamentales",
+      "type": "content",
+      "content": {
+        "component": "Lesson7_1"
+      }
+    },
+    {
+      "id": "7-2",
+      "title": "Búsqueda Lineal",
+      "type": "content",
+      "content": {
+        "component": "Lesson7_2"
+      }
+    },
+    {
+      "id": "7-3",
+      "title": "Ejercicio: Búsqueda de Canción en Playlist",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "7-4",
+      "title": "Explicación: Ejercicio Búsqueda de Canción en Playlist",
+      "type": "content",
+      "content": {
+        "component": "Lesson7_4"
+      }
+    },
+    {
+      "id": "7-5",
+      "title": "Búsqueda Binaria",
+      "type": "content",
+      "content": {
+        "component": "Lesson7_5"
+      }
+    },
+    {
+      "id": "7-6",
+      "title": "Ejercicio: El Oráculo Adivino",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "7-7",
+      "title": "Explicación: Ejercicio El Oráculo Adivino",
+      "type": "content",
+      "content": {
+        "component": "Lesson7_7"
+      }
+    },
+    {
+      "id": "7-8",
+      "title": "Ordenamiento: Bubble Sort",
+      "type": "content",
+      "content": {
+        "component": "Lesson7_8"
+      }
+    },
+    {
+      "id": "7-9",
+      "title": "Ejercicio: Eliminatorias del Torneo",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "7-10",
+      "title": "Explicación: Ejercicio Eliminatorias del Torneo",
+      "type": "content",
+      "content": {
+        "component": "Lesson7_10"
+      }
+    },
+    {
+      "id": "7-11",
+      "title": "Ordenamiento: Selection Sort",
+      "type": "content",
+      "content": {
+        "component": "Lesson7_11"
+      }
+    },
+    {
+      "id": "7-12",
+      "title": "Ejercicio: Podio Olímpico",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "7-13",
+      "title": "Explicación: Ejercicio Podio Olímpico",
+      "type": "content",
+      "content": {
+        "component": "Lesson7_13"
+      }
+    },
+    {
+      "id": "7-14",
+      "title": "Recursión",
+      "type": "content",
+      "content": {
+        "component": "Lesson7_14"
+      }
+    },
+    {
+      "id": "7-15",
+      "title": "Ejercicio: Factorial Recursivo",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "7-16",
+      "title": "Explicación: Factorial Recursivo",
+      "type": "content",
+      "content": {
+        "component": "Lesson7_16"
+      }
+    },
+    {
+      "id": "7-17",
+      "title": "Test: Algoritmos",
+      "type": "quiz",
+      "content": {}
+    },
+    {
+      "id": "7-18",
+      "title": "Conclusiones y Próximos Pasos",
+      "type": "content",
+      "content": {
+        "component": "Lesson7_18"
+      }
+    }
+  ]
+}

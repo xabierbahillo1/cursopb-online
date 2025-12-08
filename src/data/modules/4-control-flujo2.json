@@ -1,0 +1,137 @@
+{
+  "id": 4,
+  "title": "Control de Flujo II: Bucles",
+  "icon": "code",
+  "lessons": [
+    {
+      "id": "4-1",
+      "title": "Listas",
+      "type": "content",
+      "content": {
+        "component": "Lesson4_1"
+      }
+    },
+    {
+      "id": "4-2",
+      "title": "Ejercicio: Crear Lista de Productos",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "4-3",
+      "title": "Explicación: Ejercicio Crear Lista de Productos",
+      "type": "content",
+      "content": {
+        "component": "Lesson4_3"
+      }
+    },
+    {
+      "id": "4-4",
+      "title": "Bucles Simples",
+      "type": "content",
+      "content": {
+        "component": "Lesson4_4"
+      }
+    },
+    {
+      "id": "4-5",
+      "title": "Ejercicio: Calcular Total Ventas",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "4-6",
+      "title": "Explicación: Ejercicio Calcular Total Ventas",
+      "type": "content",
+      "content": {
+        "component": "Lesson4_6"
+      }
+    },
+    {
+      "id": "4-7",
+      "title": "Ejercicio: Encontrar el Máximo",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "4-8",
+      "title": "Explicación: Ejercicio Encontrar el Máximo",
+      "type": "content",
+      "content": {
+        "component": "Lesson4_8"
+      }
+    },
+    {
+      "id": "4-9",
+      "title": "Ejercicio: Descafeinar hasta el Límite",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "4-10",
+      "title": "Explicación: Ejercicio Descafeinar hasta el Límite",
+      "type": "content",
+      "content": {
+        "component": "Lesson4_10"
+      }
+    },
+    {
+      "id": "4-11",
+      "title": "Bucles Anidados",
+      "type": "content",
+      "content": {
+        "component": "Lesson4_11"
+      }
+    },
+    {
+      "id": "4-12",
+      "title": "Variables de Control",
+      "type": "content",
+      "content": {
+        "component": "Lesson4_12"
+      }
+    },
+    {
+      "id": "4-13",
+      "title": "Ejercicio: Triángulo de asteriscos",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "4-14",
+      "title": "Explicación: Ejercicio Triángulo de asteriscos",
+      "type": "content",
+      "content": {
+        "component": "Lesson4_14"
+      }
+    },
+    {
+      "id": "4-15",
+      "title": "Ejercicio: Verificar si un array está ordenado",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "4-16",
+      "title": "Explicación: Ejercicio Verificar si un array está ordenado",
+      "type": "content",
+      "content": {
+        "component": "Lesson4_16"
+      }
+    },
+    {
+      "id": "4-17",
+      "title": "Test: Bucles",
+      "type": "quiz",
+      "content": {}
+    },
+    {
+      "id": "4-18",
+      "title": "Conclusiones y Próximos Pasos",
+      "type": "content",
+      "content": {
+        "component": "Lesson4_18"
+      }
+    }
+  ]
+}

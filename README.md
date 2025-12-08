@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Plataforma de Cursos Programación
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción del Proyecto
 
-## Available Scripts
+Este proyecto es una aplicación web de **e-learning** construida con **React**. Su objetivo es proporcionar una experiencia de aprendizaje interactiva, con un fuerte enfoque en **ejercicios de programación** y contenido técnico.
 
-In the project directory, you can run:
+**Actualmente, la plataforma está siendo utilizada para impartir un Curso de Programación Básica, disponible en: [https://cursopb.xabierbahillo.dev](https://cursopb.xabierbahillo.dev).**
+
+La plataforma incluye las siguientes características:
+
+* **Estructura de Cursos:** El contenido se organiza en **módulos** y **lecciones** (`CourseContainer.js`).
+* **Diversidad de Contenido:** Soporte para diferentes tipos de lecciones como **contenido explicativo**, **cuestionarios (quiz)**, **encuestas (survey)** y, fundamentalmente, **ejercicios de código** (`LessonContent.js`).
+* **Editor de Código Interactivo:** Los ejercicios prácticos utilizan un **editor de código** integrado (`CodeEditor.js`) que permite a los usuarios escribir, ejecutar, guardar y resetear su solución, con funcionalidades como la persistencia local y sincronización con un backend.
+* **Evaluación de Ejercicios:** Cada ejercicio tiene un sistema de evaluación (`Exercise.js`, `FinalExerciseScreen.js`) que ejecuta pruebas y muestra los resultados y una puntuación final.
+* **Renderizado de Matemáticas:** Capacidad para mostrar fórmulas y ecuaciones matemáticas complejas utilizando la notación **LaTeX/KaTeX** (`LatexRenderer.js`, `LessonViewer.js`).
+* **Autenticación y Progreso:** Los usuarios pueden autenticarse mediante Firebase y el progreso de las lecciones completadas y el código de los ejercicios se guarda y sincroniza (`AuthButton.js`, `ProgressService`).
+* **Reporte de Problemas:** Se incluye un enlace para que los usuarios puedan reportar errores fácilmente por correo electrónico (`BugReportLink.js`).
+
+---
+
+## 🚀 Cómo Empezar
+
+Para configurar el proyecto localmente, sigue estos pasos:
+
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone https://github.com/xabierbahillo1/curso-programacion.git
+    cd curso-programacion
+    ```
+2.  **Instalar dependencias:**
+    ```bash
+    npm install
+    ```
+3.  **Configuración de Entorno:**
+    Crea un archivo `.env` en la raíz del proyecto y configura las variables necesarias a partir de `.env.example`
+
+---
+
+## Scripts Disponibles
+
+En el directorio del proyecto, puedes ejecutar:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Ejecuta la aplicación en el modo de desarrollo.
+Abre **[http://localhost:3000](http://localhost:3000)** para verla en tu navegador.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+La página se recargará cuando hagas cambios y también podrás ver cualquier error de lint en la consola.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Lanza el ejecutor de pruebas en el modo de vigilancia interactivo.
+Consulta la sección sobre **[ejecución de pruebas](https://facebook.github.io/create-react-app/docs/running-tests)** para más información.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Compila la aplicación para **producción** en la carpeta `build`.
+Empaqueta correctamente React en modo de producción y optimiza la compilación para el mejor rendimiento.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+La compilación está minificada y los nombres de los archivos incluyen hashes.
+¡Tu aplicación está lista para ser desplegada!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Consulta la sección sobre **[despliegue](https://facebook.github.io/create-react-app/docs/deployment)** para más información.
