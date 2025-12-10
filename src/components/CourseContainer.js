@@ -35,9 +35,9 @@ export default function CourseContainer({
     // Scroll para móvil y desktop
     const contentElement = document.querySelector('.content');
     if (contentElement) {
-      contentElement.scrollTo({ top: 0, behavior: 'smooth' });
+      contentElement.scrollTo({ top: 0 });
     }
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0 });
   };
 
   return (
