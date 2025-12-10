@@ -2,7 +2,7 @@
 
 ## Descripción del Proyecto
 
-Este proyecto es una aplicación web de **e-learning** construida con **React**. Su objetivo es proporcionar una experiencia de aprendizaje interactiva, con un fuerte enfoque en **ejercicios de programación** y contenido técnico.
+Este proyecto es una aplicación web de **e-learning** construida con **React**. Su objetivo es proporcionar una experiencia de aprendizaje interactiva, con un enfoque en **ejercicios de programación** y contenido técnico.
 
 **Actualmente, la plataforma está siendo utilizada para impartir un Curso de Programación Básica, disponible en: [https://cursopb.xabierbahillo.dev](https://cursopb.xabierbahillo.dev).**
 
@@ -24,8 +24,8 @@ Para configurar el proyecto localmente, sigue estos pasos:
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone https://github.com/xabierbahillo1/curso-programacion.git
-    cd curso-programacion
+    git clone https://github.com/xabierbahillo1/cursopb-online.git
+    cd cursopb-online
     ```
 2.  **Instalar dependencias:**
     ```bash
@@ -45,19 +45,6 @@ En el directorio del proyecto, puedes ejecutar:
 Ejecuta la aplicación en el modo de desarrollo.
 Abre **[http://localhost:3000](http://localhost:3000)** para verla en tu navegador.
 
-La página se recargará cuando hagas cambios y también podrás ver cualquier error de lint en la consola.
-
-### `npm test`
-
-Lanza el ejecutor de pruebas en el modo de vigilancia interactivo.
-Consulta la sección sobre **[ejecución de pruebas](https://facebook.github.io/create-react-app/docs/running-tests)** para más información.
-
 ### `npm run build`
 
 Compila la aplicación para **producción** en la carpeta `build`.
-Empaqueta correctamente React en modo de producción y optimiza la compilación para el mejor rendimiento.
-
-La compilación está minificada y los nombres de los archivos incluyen hashes.
-¡Tu aplicación está lista para ser desplegada!
-
-Consulta la sección sobre **[despliegue](https://facebook.github.io/create-react-app/docs/deployment)** para más información.
