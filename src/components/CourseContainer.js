@@ -32,6 +32,11 @@ export default function CourseContainer({
       setCurrentLesson(0);
     }
     
+    // Scroll para móvil y desktop
+    const contentElement = document.querySelector('.content');
+    if (contentElement) {
+      contentElement.scrollTo({ top: 0, behavior: 'smooth' });
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
