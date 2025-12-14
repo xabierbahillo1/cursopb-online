@@ -1,7 +1,7 @@
 {
   "short_name": "CursoPB",
-  "name": "Curso de Programación Basica",
-  "description": "Aprende a programar desde cero con fundamentos sólidos. Curso online práctico para dominar cualquier lenguaje.",
+  "name": "Curso de Programación Básica",
+  "description": "Aprende programación básica practicando con ejercicios autocorregibles. Sin instalaciones, todo en el navegador.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -28,5 +28,7 @@
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "lang": "es"
+  "lang": "es",
+  "categories": ["education", "programming", "learning"],
+  "orientation": "any"
 }

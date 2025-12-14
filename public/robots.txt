@@ -7,3 +7,4 @@ Disallow: /build/manifest.json
 Disallow: /build/service-worker.js
 Disallow: /service-worker.js
 Allow: /
+Sitemap: https://cursopb.xabierbahillo.dev/sitemap.xml
