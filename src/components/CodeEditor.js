@@ -1,7 +1,7 @@
 import { Code, Save, RotateCcw } from "lucide-react";
 import Editor from "@monaco-editor/react";
 
-export const CodeEditor = ({ code, setCode, logOutput, onSave, onReset }) => {
+export const CodeEditor = ({ code, setCode, logOutput, onSave, onReset, height }) => {
     return (
         <div className="code-editor-section">
             <div className="code-editor" style={{ marginBottom: '1rem' }}>
@@ -22,7 +22,7 @@ export const CodeEditor = ({ code, setCode, logOutput, onSave, onReset }) => {
                     </div>
                 </div>
                 <Editor
-                    height="300px"
+                    height={height || "300px"}
                     defaultLanguage="javascript"
                     value={code}
                     onChange={setCode}

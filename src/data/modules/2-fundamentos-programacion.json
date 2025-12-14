@@ -5,7 +5,7 @@
   "lessons": [
     {
       "id": "2-1",
-      "title": "Conceptos Fundamentales",
+      "title": "Introducción a la Programación",
       "type": "content",
       "content": {
         "component": "Lesson2_1"
@@ -13,15 +13,13 @@
     },
     {
       "id": "2-2",
-      "title": "Planificación y Variables",
-      "type": "content",
-      "content": {
-        "component": "Lesson2_2"
-      }
+      "title": "Práctica: Tus Primeros Mensajes",
+      "type": "playground",
+      "content": {}
     },
     {
       "id": "2-3",
-      "title": "Primeros Pasos en JavaScript",
+      "title": "Conceptos Fundamentales",
       "type": "content",
       "content": {
         "component": "Lesson2_3"
@@ -29,7 +27,7 @@
     },
     {
       "id": "2-4",
-      "title": "Guia de Resolución de Ejercicios",
+      "title": "Planificación y Variables",
       "type": "content",
       "content": {
         "component": "Lesson2_4"
@@ -37,13 +35,15 @@
     },
     {
       "id": "2-5",
-      "title": "Ejercicio: Suma de Variables",
-      "type": "exercise",
-      "content": {}
+      "title": "Primeros Pasos en JavaScript",
+      "type": "content",
+      "content": {
+        "component": "Lesson2_5"
+      }
     },
     {
       "id": "2-6",
-      "title": "Explicación: Ejercicio Suma de Variables",
+      "title": "Guia de Resolución de Ejercicios",
       "type": "content",
       "content": {
         "component": "Lesson2_6"
@@ -51,13 +51,13 @@
     },
     {
       "id": "2-7",
-      "title": "Test: Conceptos Básicos",
-      "type": "quiz",
+      "title": "Ejercicio: Suma de Variables",
+      "type": "exercise",
       "content": {}
     },
     {
       "id": "2-8",
-      "title": "Funciones en JavaScript",
+      "title": "Explicación: Ejercicio Suma de Variables",
       "type": "content",
       "content": {
         "component": "Lesson2_8"
@@ -65,13 +65,13 @@
     },
     {
       "id": "2-9",
-      "title": "Ejercicio: Saludar",
-      "type": "exercise",
+      "title": "Test: Conceptos Básicos",
+      "type": "quiz",
       "content": {}
     },
     {
       "id": "2-10",
-      "title": "Explicación: Ejercicio Saludar",
+      "title": "Funciones en JavaScript",
       "type": "content",
       "content": {
         "component": "Lesson2_10"
@@ -79,13 +79,13 @@
     },
     {
       "id": "2-11",
-      "title": "Ejercicio: Calcular Propina y Total",
+      "title": "Ejercicio: Saludar",
       "type": "exercise",
       "content": {}
     },
     {
       "id": "2-12",
-      "title": "Explicación: Ejercicio Calcular Propina y Total",
+      "title": "Explicación: Ejercicio Saludar",
       "type": "content",
       "content": {
         "component": "Lesson2_12"
@@ -93,13 +93,13 @@
     },
     {
       "id": "2-13",
-      "title": "Ejercicio: Calcular el promedio ponderado",
+      "title": "Ejercicio: Calcular Propina y Total",
       "type": "exercise",
       "content": {}
     },
     {
       "id": "2-14",
-      "title": "Explicación: Ejercicio calcular el promedio ponderado",
+      "title": "Explicación: Ejercicio Calcular Propina y Total",
       "type": "content",
       "content": {
         "component": "Lesson2_14"
@@ -107,21 +107,21 @@
     },
     {
       "id": "2-15",
-      "title": "Librerías y la Documentación",
-      "type": "content",
-      "content": {
-        "component": "Lesson2_15"
-      }
-    },
-    {
-      "id": "2-16",
-      "title": "Ejercicio: La hipotenusa",
+      "title": "Ejercicio: Calcular el promedio ponderado",
       "type": "exercise",
       "content": {}
     },
     {
+      "id": "2-16",
+      "title": "Explicación: Ejercicio calcular el promedio ponderado",
+      "type": "content",
+      "content": {
+        "component": "Lesson2_16"
+      }
+    },
+    {
       "id": "2-17",
-      "title": "Explicación: Ejercicio La hipotenusa",
+      "title": "Librerías y la Documentación",
       "type": "content",
       "content": {
         "component": "Lesson2_17"
@@ -129,21 +129,21 @@
     },
     {
       "id": "2-18",
-      "title": "La Importancia de la Especificación",
-      "type": "content",
-      "content": {
-        "component": "Lesson2_18"
-      }
-    },
-    {
-      "id": "2-19",
-      "title": "Test: Funciones, Librerías y Especificaciones",
-      "type": "quiz",
+      "title": "Ejercicio: La hipotenusa",
+      "type": "exercise",
       "content": {}
     },
     {
+      "id": "2-19",
+      "title": "Explicación: Ejercicio La hipotenusa",
+      "type": "content",
+      "content": {
+        "component": "Lesson2_19"
+      }
+    },
+    {
       "id": "2-20",
-      "title": "Conclusiones y Próximos Pasos",
+      "title": "La Importancia de la Especificación",
       "type": "content",
       "content": {
         "component": "Lesson2_20"
@@ -151,6 +151,20 @@
     },
     {
       "id": "2-21",
+      "title": "Test: Funciones, Librerías y Especificaciones",
+      "type": "quiz",
+      "content": {}
+    },
+    {
+      "id": "2-22",
+      "title": "Conclusiones y Próximos Pasos",
+      "type": "content",
+      "content": {
+        "component": "Lesson2_22"
+      }
+    },
+    {
+      "id": "2-23",
       "title": "Encuesta de Satisfacción",
       "type": "survey",
       "content": {}

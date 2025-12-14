@@ -1752,6 +1752,41 @@ code {
     background: transparent;
 }
 
+.playground-tips {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #30363d;
+}
+
+.playground-tips h4 {
+  color: #a371f7;
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.playground-tips ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.playground-tips li {
+  padding: 0.4rem 0;
+  padding-left: 1.25rem;
+  position: relative;
+  font-size: 0.85rem;
+  color: #8b949e;
+  line-height: 1.5;
+}
+
+.playground-tips li:before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  font-size: 0.9rem;
+}
+
 /* Responsive Design */
 @media (min-width: 1025px) {
   .content {
@@ -2038,6 +2073,10 @@ code {
 
   .survey-completed {
     padding: 2rem 1.5rem;
+  }
+
+  .playground-tips li {
+    font-size: 0.8rem;
   }
 }
 

@@ -3,6 +3,7 @@ import { CheckCircle } from "lucide-react";
 import { LessonViewer } from "./LessonViewer";
 import { Quiz } from "./Quiz";
 import { Exercise } from "./Exercise";
+import { Playground } from "./Playground";
 import { Survey } from "./Survey";
 import { Payment } from "./Payment";
 import { fetchLessonContent } from "../services/LessonService";
@@ -118,6 +119,15 @@ export default function LessonContent({ lesson, onComplete }) {
       case "exercise":
         return (
           <Exercise 
+            content={lessonData.content} 
+            onComplete={onComplete} 
+            id={lessonData.id} 
+          />
+        );
+      
+      case "playground":
+        return (
+          <Playground 
             content={lessonData.content} 
             onComplete={onComplete} 
             id={lessonData.id} 
