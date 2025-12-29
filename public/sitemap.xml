@@ -7,9 +7,17 @@
   <!-- Página principal -->
   <url>
     <loc>https://cursopb.xabierbahillo.dev/</loc>
-    <lastmod>2024-12-14</lastmod>
+    <lastmod>2024-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <!-- Página del curso -->
+  <url>
+    <loc>https://cursopb.xabierbahillo.dev/curso</loc>
+    <lastmod>2024-12-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <!-- Prueba de nivel -->
@@ -19,5 +27,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+</urlset>
 
 </urlset>
