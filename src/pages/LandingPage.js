@@ -6,17 +6,10 @@ const LandingPage = () => {
 
     useEffect(() => {
     // Al entrar a la landing, forzamos el scroll
-    document.documentElement.style.overflow = 'auto';
     document.body.style.overflow = 'auto';
-    document.body.style.height = 'auto';
-    document.body.style.position = 'static';
-
-    // Limpieza al salir de la landing (opcional, para que el curso vuelva a su estado)
+    // Limpieza al salir de la landing 
     return () => {
-      document.documentElement.style.overflow = '';
       document.body.style.overflow = '';
-      document.body.style.height = '';
-      document.body.style.position = '';
     };
   }, []);
 
