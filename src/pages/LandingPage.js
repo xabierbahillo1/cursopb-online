@@ -31,11 +31,6 @@ const LandingPage = () => {
             Empezar Gratis
             <ArrowRight size={24} />
           </a>
-          
-          <p className="hero-level-test">
-            ¿Ya tienes experiencia?{' '}
-            <a href="/level_exercise">Prueba de nivel</a>
-          </p>
 
           <div className="pricing-container">
             <div>
@@ -60,7 +55,7 @@ const LandingPage = () => {
         <div className="section-container">
           <h2 className="section-title">Cómo Funciona</h2>
           <p className="section-subtitle">
-            Cada lección termina escribiendo código. Nada de quedarse solo en teoría.
+            Usamos JavaScript como herramienta práctica, pero te enseñamos la lógica universal que usarás en cualquier lenguaje.
           </p>
 
           <div className="steps-grid">
@@ -70,7 +65,7 @@ const LandingPage = () => {
               </div>
               <div className="step-title">Teoría</div>
               <div className="step-description">
-                Clara y sin rodeos. Solo lo necesario.
+                Aprendes lógica pura. Clara y sin rodeos. Aplicable a cualquier lenguaje.
               </div>
             </div>
 
@@ -90,7 +85,7 @@ const LandingPage = () => {
               </div>
               <div className="step-title">Práctica</div>
               <div className="step-description">
-                Programas de verdad. En el navegador.
+                Escribes código directamente en tu navegador. Sin instalar nada.
               </div>
             </div>
           </div>
@@ -132,6 +127,13 @@ const LandingPage = () => {
             </ul>
           </div>
         </div>
+
+        <div className="conversion-test-container">
+          <p>¿Dudas de tu nivel?</p>
+          <a href="/level_exercise" className="secondary-test-link">
+            Haz la prueba de nivel.
+          </a>
+        </div>
       </section>
 
       {/* CTA Final */}
@@ -140,9 +142,9 @@ const LandingPage = () => {
           <h2 className="cta-final-title">Empieza Ahora</h2>
           
           <p className="cta-final-subtitle">
-            Sin compromiso. Sin tarjeta. Solo tú y el código.
+            Sin compromiso. Sin tarjeta. Sin instalaciones.
           </p>
-
+ 
           <a href="/curso" className="cta-button-large">
             Empezar Gratis
             <ArrowRight size={28} />

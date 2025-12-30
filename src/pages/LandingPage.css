@@ -459,6 +459,38 @@ body {
   font-weight: bold;
 }
 
+.conversion-test-container {
+  margin: 3rem auto 0 auto;
+  text-align: center;
+  padding: 2rem;
+  background: rgba(88, 166, 255, 0.05);
+  border-radius: 16px;
+  border: 1px dashed rgba(88, 166, 255, 0.2);
+  max-width: 500px;
+  width: 90%;
+}
+
+.conversion-test-container p {
+  font-size: 1rem;
+  color: #8b949e;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.secondary-test-link {
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.secondary-test-link:hover {
+  color: #79c0ff;
+  transform: translateY(-2px);
+}
+
 /* CTA Final Section */
 .cta-final-section {
   padding: 8rem 2rem;
@@ -703,6 +735,11 @@ body {
 
   .audience-list li {
     font-size: 1.05rem;
+  }
+
+  .conversion-test-container {
+    padding: 1.5rem;
+    max-width: 100%;
   }
 
   .cta-final-section {
