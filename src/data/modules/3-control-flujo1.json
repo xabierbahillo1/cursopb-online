@@ -71,6 +71,28 @@
     },
     {
       "id": "3-10",
+      "title": "Condicionales anidadas",
+      "type": "content",
+      "content": {
+        "component": "Lesson3_10"
+      }
+    },
+    {
+      "id": "3-11",
+      "title": "Ejercicio: Validador de Compra Online",
+      "type": "exercise",
+      "content": {}
+    },
+    {
+      "id": "3-12",
+      "title": "Explicación: Ejercicio Validador de Compra Online",
+      "type": "content",
+      "content": {
+        "component": "Lesson3_12"
+      }
+    },
+    {
+      "id": "3-13",
       "title": "Test: Condicionales",
       "type": "quiz",
       "content": {}
