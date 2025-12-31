@@ -11,10 +11,10 @@ export const levelExerciseContent = {
 }
 
 La función debe:
-1. Calcular el promedio de cada estudiante y redondearlo a 2 decimales.
+1. Calcular el promedio de cada estudiante (suma de notas / número de notas) y redondearlo a 2 decimales.
 2. Determinar su estado:
    - "Aprobado" si promedio >= 6
-   - "Reprobado" si promedio < 6
+   - "Suspenso" si promedio < 6
 3. Devolver un nuevo array con objetos que contengan nombre, promedio y estado.
 
 Ejemplo de uso:
@@ -30,7 +30,7 @@ Resultado esperado:
 
 [
   { nombre: "Ana", promedio: 8, estado: "Aprobado" },
-  { nombre: "Luis", promedio: 5, estado: "Reprobado" }
+  { nombre: "Luis", promedio: 5, estado: "Suspenso" }
 ]
 
 Restricciones:
@@ -41,7 +41,12 @@ Restricciones:
       "El array puede estar vacío."
     ],
     postconditions: [
-      "Devuelve un array con objetos que contengan nombre, promedio (redondeado a 2 decimales) y estado.",
+      "Devuelve un array con objetos que contengan nombre, promedio y estado.",
+      "Por cada estudiante en el array recibido como parámetro, se debe crear un objeto en el array resultante.",
+      "El nombre es el mismo nombre recibido en el objeto estudiante original.",
+      "El promedio se calcula como: suma de todas las notas / número de notas.",
+      "El promedio debe estar redondeado a 2 decimales.",
+      "El estado es 'Aprobado' si promedio >= 6, o 'Suspenso' si promedio < 6.",
       "No modifica el array original."
     ],
     functionName: "analizarNotas",
@@ -58,7 +63,7 @@ const estudiantes = [
 console.log(analizarNotas(estudiantes)); 
 // Debe retornar: [
 //   { nombre: "Ana", promedio: 8, estado: "Aprobado" },
-//   { nombre: "Luis", promedio: 5, estado: "Reprobado" }
+//   { nombre: "Luis", promedio: 5, estado: "Suspenso" }
 // ]`,
     mainCode: "",
     solution: `function analizarNotas(estudiantes) {
@@ -76,7 +81,7 @@ console.log(analizarNotas(estudiantes));
     let promedio = suma / notas.length;
     promedio = Math.round(promedio * 100) / 100; // redondear a 2 decimales
 
-    const estado = promedio >= 6 ? "Aprobado" : "Reprobado";
+    const estado = promedio >= 6 ? "Aprobado" : "Suspenso";
 
     resultado.push({
       nombre: estudiante.nombre,
@@ -96,7 +101,7 @@ console.log(analizarNotas(estudiantes));
         ],
         expected: [
           { nombre: "Ana", promedio: 8, estado: "Aprobado" },
-          { nombre: "Luis", promedio: 5, estado: "Reprobado" }
+          { nombre: "Luis", promedio: 5, estado: "Suspenso" }
         ]
       },
       {
@@ -108,7 +113,7 @@ console.log(analizarNotas(estudiantes));
         expected: [
           { nombre: "Pedro", promedio: 9.67, estado: "Aprobado" },
           { nombre: "Maria", promedio: 6, estado: "Aprobado" },
-          { nombre: "Jorge", promedio: 3, estado: "Reprobado" }
+          { nombre: "Jorge", promedio: 3, estado: "Suspenso" }
         ]
       },
       {
@@ -124,7 +129,7 @@ console.log(analizarNotas(estudiantes));
           { nombre: "Tomás", notas: [0, 0, 0] }
         ],
         expected: [
-          { nombre: "Tomás", promedio: 0, estado: "Reprobado" }
+          { nombre: "Tomás", promedio: 0, estado: "Suspenso" }
         ]
       },
       {
@@ -133,7 +138,7 @@ console.log(analizarNotas(estudiantes));
           { nombre: "Luis", notas: [5.99, 6, 6.01] }
         ],
         expected: [
-          { nombre: "Eva", promedio: 5.97, estado: "Reprobado" },
+          { nombre: "Eva", promedio: 5.97, estado: "Suspenso" },
           { nombre: "Luis", promedio: 6, estado: "Aprobado" }
         ]
       },
