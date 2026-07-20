@@ -164,6 +164,11 @@ export const Payment = ({ lessonId }) => {
               )}
             </button>
 
+            <div className="payment-redeem-hint">
+              <span>¿Tienes un código? </span>
+              <a href="/redeem" className="payment-redeem-link">Canjéalo aquí</a>
+            </div>
+
             <div className="payment-support">
               <button
                 className="payment-support-link"

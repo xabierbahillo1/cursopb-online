@@ -1465,8 +1465,25 @@ code {
   line-height: 1.5;
 }
 
-.payment-support {
+.payment-redeem-hint {
   margin-top: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #8b949e;
+}
+
+.payment-redeem-link {
+  color: #58a6ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.payment-redeem-link:hover {
+  text-decoration: underline;
+}
+
+.payment-support {
+  margin-top: 0.75rem;
   text-align: center;
 }
 

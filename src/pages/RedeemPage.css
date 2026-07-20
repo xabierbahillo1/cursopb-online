@@ -1,0 +1,205 @@
+.redeem-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #0a0e1a 0%, #0d1117 50%, #0a0e1a 100%);
+  color: #e6edf3;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.redeem-card {
+  width: 100%;
+  max-width: 460px;
+  background: linear-gradient(180deg, #161b22 0%, #0d1117 100%);
+  border: 1px solid #30363d;
+  border-radius: 16px;
+  padding: 36px 32px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.redeem-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #58a6ff 0%, #79c0ff 100%);
+  color: #0a0e1a;
+}
+
+.redeem-card h1 {
+  font-size: 1.4rem;
+  margin: 0 0 20px;
+  color: #e6edf3;
+}
+
+.redeem-loading {
+  color: #9198a1;
+  margin: 0;
+}
+
+.redeem-state {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+.redeem-intro {
+  color: #9198a1;
+  line-height: 1.55;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.redeem-intro strong,
+.redeem-confirm strong {
+  color: #e6edf3;
+}
+
+/* Cabecera de cuenta */
+.redeem-account {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 14px;
+  background: rgba(88, 166, 255, 0.08);
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  color: #9198a1;
+}
+.redeem-account strong { color: #e6edf3; }
+
+.redeem-link {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  color: #58a6ff;
+  cursor: pointer;
+  font-size: 0.82rem;
+  padding: 0;
+}
+.redeem-link:hover { text-decoration: underline; }
+
+/* Formulario del código */
+.redeem-label {
+  display: block;
+  font-size: 0.85rem;
+  color: #9198a1;
+  margin-bottom: 6px;
+}
+
+.redeem-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  color: #e6edf3;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, monospace;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.redeem-input:focus {
+  outline: none;
+  border-color: #58a6ff;
+  box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.15);
+}
+.redeem-input::placeholder { color: #484f58; }
+
+/* Confirmación */
+.redeem-confirm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 16px;
+  background: rgba(88, 166, 255, 0.06);
+  border: 1px solid #30363d;
+  border-radius: 10px;
+}
+.redeem-confirm p {
+  margin: 0;
+  line-height: 1.5;
+  color: #c9d1d9;
+  font-size: 0.95rem;
+}
+.redeem-confirm > svg { color: #58a6ff; }
+.redeem-warning {
+  color: #d29922 !important;
+  font-size: 0.85rem !important;
+}
+
+/* Botones */
+.redeem-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease, opacity 0.15s ease;
+}
+.redeem-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.redeem-btn:not(:disabled):active { transform: translateY(1px); }
+
+.redeem-btn.primary {
+  background: linear-gradient(135deg, #238636 0%, #2ea043 100%);
+  color: #ffffff;
+  width: 100%;
+}
+.redeem-btn.ghost {
+  background: transparent;
+  border: 1px solid #30363d;
+  color: #e6edf3;
+  flex: 1;
+}
+.redeem-btn.ghost:hover { border-color: #8b949e; }
+
+.redeem-actions {
+  display: flex;
+  gap: 10px;
+}
+.redeem-actions .redeem-btn.primary { flex: 1; width: auto; }
+
+/* Éxito */
+.redeem-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  color: #3fb950;
+}
+.redeem-success h2 { margin: 4px 0 0; font-size: 1.25rem; color: #e6edf3; }
+.redeem-success p { margin: 0; color: #9198a1; font-size: 0.92rem; }
+.redeem-success strong { color: #e6edf3; }
+
+/* Error */
+.redeem-error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: rgba(248, 81, 73, 0.1);
+  border: 1px solid rgba(248, 81, 73, 0.4);
+  border-radius: 8px;
+  color: #f85149;
+  font-size: 0.88rem;
+}
