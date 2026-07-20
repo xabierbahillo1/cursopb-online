@@ -1,0 +1,435 @@
+/* =============================================================
+   /pdfcodigo — Generador local de PDFs de canje
+   Documento A4 profesional, tema claro. Imprime limpio.
+   ============================================================= */
+
+:root {
+  --pdf-ink: #1f2328;
+  --pdf-muted: #656d76;
+  --pdf-faint: #8c959f;
+  --pdf-line: #d0d7de;
+  --pdf-line-soft: #eaeef2;
+  --pdf-tint: #f6f8fa;
+  --pdf-blue: #0969da;
+  --pdf-blue-ink: #0a3069;
+  --pdf-blue-tint: #ddf4ff;
+  --pdf-green: #1a7f37;
+  --pdf-navy: #0d1117;
+  --pdf-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --pdf-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}
+
+.pdf-page {
+  min-height: 100dvh;
+  background: #4b5563;
+  color: var(--pdf-ink);
+  font-family: var(--pdf-sans);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* ---------- Barra de control (solo pantalla) ---------- */
+.pdf-toolbar {
+  width: 100%;
+  max-width: 210mm;
+  background: #fff;
+  border: 1px solid var(--pdf-line);
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.pdf-toolbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--pdf-blue);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.pdf-toolbar-form {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.pdf-toolbar-input {
+  flex: 1;
+  min-width: 220px;
+  background: #fff;
+  border: 1px solid var(--pdf-line);
+  border-radius: 10px;
+  color: var(--pdf-ink);
+  padding: 0.8rem 1rem;
+  font-family: var(--pdf-mono);
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.pdf-toolbar-input:focus {
+  outline: none;
+  border-color: var(--pdf-blue);
+  box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.25);
+}
+
+.pdf-btn {
+  background: var(--pdf-green);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 1.3rem;
+  font-family: var(--pdf-sans);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: filter 0.2s;
+}
+
+.pdf-btn:hover:not(:disabled) { filter: brightness(1.08); }
+
+.pdf-btn.ghost {
+  background: #fff;
+  border: 1px solid var(--pdf-line);
+  color: var(--pdf-ink);
+}
+
+.pdf-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.pdf-toolbar-note {
+  margin: 1rem 0 0;
+  font-size: 0.8rem;
+  color: var(--pdf-muted);
+  line-height: 1.5;
+}
+
+.pdf-empty {
+  color: #e6edf3;
+  text-align: center;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* =============================================================
+   LA HOJA — A4, papel blanco
+   ============================================================= */
+.pdf-sheet {
+  width: 210mm;
+  min-height: 297mm;
+  background: #fff;
+  color: var(--pdf-ink);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Filete de acento superior */
+.pdf-sheet::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--pdf-green) 0%, var(--pdf-blue) 100%);
+}
+
+/* ---------- Cabecera ---------- */
+.pdf-cover {
+  padding: 20mm 20mm 12mm;
+  border-bottom: 1px solid var(--pdf-line);
+}
+
+.pdf-cover-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--pdf-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  color: var(--pdf-muted);
+  margin-bottom: 1.6rem;
+}
+
+.pdf-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+}
+
+.pdf-cover h1 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  color: var(--pdf-ink);
+}
+
+.pdf-cover-sub {
+  margin: 0.8rem 0 0;
+  font-size: 1rem;
+  color: var(--pdf-muted);
+  max-width: 130mm;
+  line-height: 1.5;
+}
+
+/* ---------- Cuerpo ---------- */
+.pdf-body {
+  flex: 1;
+  padding: 12mm 20mm 8mm;
+}
+
+/* Etiqueta pequeña sobre cada sección */
+.pdf-overline {
+  display: block;
+  font-family: var(--pdf-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--pdf-blue);
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+/* Enlaces clicables dentro del PDF */
+.pdf-link {
+  color: var(--pdf-blue);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  word-break: break-all;
+}
+
+.pdf-footer .pdf-link { text-decoration: none; }
+
+/* Bloque del código */
+.pdf-code-block {
+  text-align: center;
+  background: var(--pdf-tint);
+  border: 1px solid var(--pdf-line);
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+}
+
+.pdf-code-block .pdf-overline { margin-bottom: 0.4rem; }
+
+.pdf-code {
+  margin: 0.3rem 0 0.6rem;
+  font-family: var(--pdf-mono);
+  font-size: clamp(1.6rem, 5vw, 2.3rem);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--pdf-blue-ink);
+  word-break: break-all;
+}
+
+.pdf-code-hint {
+  display: block;
+  color: var(--pdf-faint);
+  font-size: 0.8rem;
+}
+
+/* Pasos */
+.pdf-steps { margin-top: 2.2rem; }
+
+.pdf-steps h2 {
+  font-size: 1.3rem;
+  color: var(--pdf-ink);
+  margin: 0 0 1.3rem;
+  letter-spacing: -0.01em;
+}
+
+.pdf-step {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 0 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--pdf-line-soft);
+}
+
+.pdf-step-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--pdf-green);
+  color: #fff;
+  font-family: var(--pdf-mono);
+  font-weight: 800;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pdf-step-text h3 {
+  margin: 0.25rem 0 0.35rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--pdf-ink);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pdf-step-text h3 svg { color: var(--pdf-blue); }
+
+.pdf-step-text p {
+  margin: 0;
+  color: var(--pdf-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+/* Código repetido dentro del paso "Escribe tu código" */
+.pdf-step-code {
+  display: inline-block;
+  margin-top: 0.7rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--pdf-line);
+  border-radius: 8px;
+  background: var(--pdf-tint);
+  font-family: var(--pdf-mono);
+  font-weight: 800;
+  font-size: 1.05rem;
+  letter-spacing: 0.1em;
+  color: var(--pdf-blue-ink);
+  word-break: break-all;
+}
+
+.pdf-shot {
+  display: block;
+  width: 100%;
+  max-width: 130mm;
+  border-radius: 10px;
+  border: 1px solid var(--pdf-line);
+  margin-top: 0.7rem;
+}
+
+.pdf-shot-missing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 1.4rem;
+  background: var(--pdf-tint);
+  border: 1px dashed var(--pdf-line);
+  color: var(--pdf-faint);
+  font-size: 0.78rem;
+  text-align: center;
+  max-width: 130mm;
+}
+
+.pdf-shot-missing code {
+  font-family: var(--pdf-mono);
+  font-size: 0.72rem;
+  color: var(--pdf-blue);
+}
+
+/* Acceso futuro */
+.pdf-access {
+  margin-top: 2.2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: var(--pdf-blue-tint);
+  border: 1px solid #54aeff;
+  border-radius: 12px;
+  padding: 1.2rem 1.4rem;
+}
+
+.pdf-access-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  background: var(--pdf-blue);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pdf-access h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--pdf-blue-ink);
+}
+
+.pdf-access p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #1f2328;
+  line-height: 1.55;
+}
+
+.pdf-access-arrow { color: var(--pdf-blue); flex-shrink: 0; }
+
+/* ---------- Footer ---------- */
+.pdf-footer {
+  margin-top: auto;
+  padding: 6mm 20mm;
+  border-top: 1px solid var(--pdf-line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  color: var(--pdf-faint);
+}
+
+.pdf-footer span:first-child { font-family: var(--pdf-mono); }
+
+/* =============================================================
+   IMPRESIÓN — Guardar como PDF
+   ============================================================= */
+/* Margen exterior en TODAS las páginas (también continuación) */
+@page {
+  size: A4;
+  margin: 15mm;
+}
+
+@media print {
+  /* Que salgan los rellenos de color de acento */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  html, body { background: #fff; }
+
+  .pdf-page {
+    padding: 0;
+    background: #fff;
+    display: block;
+  }
+
+  .pdf-toolbar,
+  .pdf-empty { display: none !important; }
+
+  /* Marco visible + padding interior; el @page da el margen exterior */
+  .pdf-sheet {
+    width: auto;
+    min-height: auto;
+    box-shadow: none;
+    border: 1px solid var(--pdf-line);
+  }
+
+  .pdf-cover { padding: 11mm 12mm 8mm; }
+  .pdf-body { padding: 8mm 12mm 6mm; }
+  .pdf-footer { padding: 6mm 12mm; }
+
+  /* No partir bloques entre páginas */
+  .pdf-step,
+  .pdf-code-block,
+  .pdf-access { break-inside: avoid; page-break-inside: avoid; }
+}
