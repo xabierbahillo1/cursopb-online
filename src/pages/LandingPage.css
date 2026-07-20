@@ -176,6 +176,49 @@ body {
   margin-top: 0.5rem;
 }
 
+.ebay-offer {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.ebay-offer-note {
+  font-size: 1.05rem;
+  color: #e6edf3;
+  background: rgba(63, 185, 80, 0.1);
+  border: 1px solid rgba(63, 185, 80, 0.4);
+  padding: 0.85rem 1.6rem;
+  border-radius: 100px;
+}
+
+.ebay-offer-note b {
+  color: #56d364;
+  font-weight: 700;
+}
+
+.ebay-redeem-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #58a6ff;
+  background: rgba(88, 166, 255, 0.08);
+  border: 1px solid rgba(88, 166, 255, 0.4);
+  padding: 0.9rem 2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+}
+
+.ebay-redeem-button:hover {
+  background: rgba(88, 166, 255, 0.15);
+  border-color: #58a6ff;
+  transform: translateY(-2px);
+}
+
 .pricing-divider {
   width: 2px;
   background: linear-gradient(180deg, transparent, #30363d, transparent);

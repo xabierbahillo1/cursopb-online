@@ -4,7 +4,7 @@
 
 Este proyecto es una aplicación web de **e-learning** construida con **React**. Su objetivo es proporcionar una experiencia de aprendizaje interactiva, con un enfoque en **ejercicios de programación** y contenido técnico.
 
-**Actualmente, la plataforma está siendo utilizada para impartir un Curso de Programación Básica, disponible en: [https://cursopb.xabierbahillo.dev](https://cursopb.xabierbahillo.dev).**
+**Actualmente, la plataforma está siendo utilizada para impartir un Curso de Programación Básica, disponible en: [https://cursoprogramacionbasica.es](https://cursoprogramacionbasica.es).**
 
 La plataforma incluye las siguientes características:
 

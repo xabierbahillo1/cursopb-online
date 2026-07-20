@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { BookOpen, Brain, Code, X, Check, ArrowRight } from 'lucide-react';
 import './LandingPage.css';
 
+const EBAY_OFFER = process.env.REACT_APP_EBAY === 'true';
+
 const LandingPage = () => {
 
     useEffect(() => {
@@ -44,6 +46,18 @@ const LandingPage = () => {
               <div className="pricing-note">pago único</div>
             </div>
           </div>
+
+          {EBAY_OFFER && (
+            <div className="ebay-offer">
+              <div className="ebay-offer-note">
+                🔥 Precio especial <b>6,99€</b> comprando por eBay
+              </div>
+              <a href="/redeem" className="ebay-redeem-button">
+                Canjear código eBay
+                <ArrowRight size={20} />
+              </a>
+            </div>
+          )}
         </div>
 
         {/* Scroll indicator */}

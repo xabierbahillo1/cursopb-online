@@ -6,7 +6,7 @@
 
   <!-- Página principal -->
   <url>
-    <loc>https://cursopb.xabierbahillo.dev/</loc>
+    <loc>https://cursoprogramacionbasica.es/</loc>
     <lastmod>2024-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,7 +14,7 @@
 
   <!-- Página del curso -->
   <url>
-    <loc>https://cursopb.xabierbahillo.dev/curso</loc>
+    <loc>https://cursoprogramacionbasica.es/curso</loc>
     <lastmod>2024-12-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -22,7 +22,7 @@
 
   <!-- Prueba de nivel -->
   <url>
-    <loc>https://cursopb.xabierbahillo.dev/level_exercise</loc>
+    <loc>https://cursoprogramacionbasica.es/level_exercise</loc>
     <lastmod>2024-12-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
