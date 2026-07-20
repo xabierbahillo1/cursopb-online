@@ -3,7 +3,7 @@ import { BlockMath } from 'react-katex';
 
 export const LatexRenderer = ({ text }) => {
     // 1. Divide el texto en partes: texto plano y bloques de fórmula ($$formula$$)
-    const parts = text.split(/(\$\$[^\$]*\$\$)/g);
+    const parts = text.split(/(\$\$[^$]*\$\$)/g);
 
     return (
         <React.Fragment>

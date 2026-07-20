@@ -67,7 +67,7 @@ export default function LessonContent({ lesson, onComplete }) {
       
       reloadLesson();
     }
-  }, []);
+  }, [lesson.id]);
 
   if (loading) {
     return (

@@ -16,7 +16,7 @@ export const Exercise = ({ content, onComplete, id }) => {
         return savedCode || content.starterCode;
     });
     const [logOutput, setLogOutput] = useState('');
-    const [testResults, setTestResults] = useState([]);
+    const [, setTestResults] = useState([]);
     const [testStatusMessage, setTestStatusMessage] = useState('');
     const [showFinalScreen, setShowFinalScreen] = useState(false);
     const [finalScore, setFinalScore] = useState(0);

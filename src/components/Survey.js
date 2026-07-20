@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { CheckCircle, AlertCircle, ChevronRight, Loader2 } from 'lucide-react';
 import { useAuth } from '../hooks/useAuth';
 import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
@@ -21,9 +21,30 @@ export const Survey = ({ content, onComplete, surveyId }) => {
   // HOOKS Y VALIDACIÓN
   // =========================================================
 
+  const checkIfCompleted = useCallback(async () => {
+    if (!user || !FIREBASE_ACTIVE || !db) {
+      setLoading(false);
+      return;
+    }
+
+    try {
+      const docId = `${user.uid}_${surveyId}`;
+      const surveyRef = doc(db, 'surveys', docId);
+      const surveySnap = await getDoc(surveyRef);
+
+      if (surveySnap.exists()) {
+        setAlreadyCompleted(true);
+      }
+    } catch (error) {
+      console.error('Error checking survey completion:', error);
+    } finally {
+      setLoading(false);
+    }
+  }, [user, surveyId]);
+
   useEffect(() => {
     checkIfCompleted();
-  }, [user]); 
+  }, [checkIfCompleted]);
 
 
   const isFormValid = useMemo(() => {
@@ -56,27 +77,6 @@ export const Survey = ({ content, onComplete, surveyId }) => {
       return true;
     });
   }, [responses, content]);
-
-  const checkIfCompleted = async () => {
-    if (!user || !FIREBASE_ACTIVE || !db) {
-      setLoading(false);
-      return;
-    }
-
-    try {
-      const docId = `${user.uid}_${surveyId}`;
-      const surveyRef = doc(db, 'surveys', docId);
-      const surveySnap = await getDoc(surveyRef);
-
-      if (surveySnap.exists()) {
-        setAlreadyCompleted(true);
-      }
-    } catch (error) {
-      console.error('Error checking survey completion:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
 
   const handleSubmit = async () => {
     if (!user || !FIREBASE_ACTIVE || !db) {
